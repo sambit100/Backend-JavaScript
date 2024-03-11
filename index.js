@@ -1,13 +1,14 @@
 import express from 'express';
+//  const express = require('express')
 require('dotenv').config();
 
 const app = express();
 
-
+ const PORT = 4000
 app.get('/',(req,res)=>{
-    res.send(" HOme page")
+    res.send(" Home page")
 })
 
-app.listen(process.env.PORT,()=>{
+app.listen(PORT,()=>{
     console.log("server started successfully");
 })
